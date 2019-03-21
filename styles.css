@@ -1,118 +1,134 @@
 * {
-	margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Cambay', sans-serif;
-	background-color: black;
-	color: green;
+  background-image: url(https://source.unsplash.com/Yj1M5riCKk4);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* styling of header, each color is it's own layer */
+.welcome {
+  font-size: 9em;
+  text-transform: uppercase;
+  position: absolute;
+  padding-top: 10%;
+  padding-left: 20%;
 }
 
 .black {
-	color: black;
+  color: black;
 }
 
 .purple {
-	color: purple;
+  top: 3px;
+  left: 3px;
+  color: purple;
 }
 
 .blue {
-	color: blue;
+  top: 6px;
+  left: 6px;
+  color: blue;
 }
 
 .green {
-	color: green;
+  top: 9px;
+  left: 9px;
+  color: green;
 }
 
 .yellow {
-	color: yellow;
+  top: 12px;
+  left: 12px;
+  color: yellow;
 }
 
 .orange {
-	color: orange;
+  top: 15px;
+  left: 15px;
+  color: orange;
 }
 
 .red {
-	color: red;
+  top: 18px;
+  left: 18px;
+  color: red;
 }
 
-.main-header {
-	font-size: 7em;
+/* navigation bar styling */
+li {
+  display: inline-block;
 }
 
-.welcome {
-	position: absolute;
-	padding: 100px;
+a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #d8018c;
+  font-size: 1.2em;
 }
 
-.main-header .purple {
-	top: 3px;
-	left: 3px;
+nav {
+  width: 60%;
+  position: fixed;
+  top: 290px;
+  left: 370px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 11px 2px turquoise;
+  transition: 2s;
 }
 
-.main-header .blue {
-	top: 6px;
-	left: 6px;
+/* on hover navigation bar disappears */
+nav:hover {
+  top: -100px;
+  left: -500px;
+  transform: scale(0.1);
+  transition: 2s;
 }
 
-.main-header .green {
-	top: 9px;
-	left: 9px;
+/* styling of the fish */
+.fish {
+  position: fixed;
+  top: 235px;
+  left: -500px;
+  width: 70%;
+  transition: 1s ease-in-out;
 }
 
-.main-header .yellow {
-	top: 12px;
-	left: 12px;
+/* on hover, fish moves to the right */
+.fish:hover {
+  left: 5px;
+  width: 100%;
+  transition: 1s ease-in-out;
 }
 
-.main-header .orange {
-	top: 15px;
-	left: 15px;
+/* styling of the introduction text */
+.intro {
+  float: right;
+  width: 45%;
+  margin-top: 350px;
+  text-align: justify;
+  background-image: linear-gradient(
+    red,
+    orange,
+    yellow,
+    green,
+    turquoise,
+    blue,
+    purple
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.main-header .red {
-	top: 18px;
-	left: 18px;
+.intro p {
+  padding: 30px;
+  line-height: 1.3;
 }
-
-section {
-	position: relative;
-}
-
-.random-text {
-	position: absolute;
-	top: 450px;
-	left: 710px;
-	width: 30%;
-	transition: 0.6s;
-	border-radius: 50%;
-	padding: 100px;
-	text-align: center;
-	color: #000000;
-}
-
-.random-text:hover {
-	background-color: #f6f93fb8;
-	color: #c810d4;
-	text-shadow: 3px 1px 5px #000d3c;
-	transition: 0.6s;
-	border-radius: 50%;
-	padding: 100px;
-}
-
-.lights {
-	position: absolute;
-}
-
-.planet {
-	top: 0;
-	left: 400px;
-	z-index: -1;
-}
-
-
-
-.navbar {
-	display: none;
-}
-
